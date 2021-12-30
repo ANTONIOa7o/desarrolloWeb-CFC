@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+</head>
+
+<body>
+    <h1>TRATAMIENTO DE IMAGENES Y TEXTO</h1>
+    <!--
+        ----------------IMAGENES-------------------
+        Se insertará las imagenes a través de la etiqueta
+        <img /> , atributo src="",con lo cual su sintaxis:
+        <img src="../images/nombre.archivo.ext" />
+
+    CARGAR UNA IMAGEN LOCAL ↓            
+    -->
+    <h2>Imagen Local</h2>
+    <div align="center">
+        <img src="images/boladelmundo.png" title="" alt="" width="60%" height="150px" /><br/>
+    </div>
+
+    <div align="middle">
+        <img src="images/boladelmundo.png" title="" alt="" width="33%" />
+    </div>
+
+    <!--
+        CARGAR UNA IMAGEN POR URL ↓ 
+    -->
+    <h2>Imagen por URL</h2>
+    <div align="middle">
+        <img src="https://www.pikpng.com/pngl/m/75-758506_mundo-png-earth-png-clipart.png" title="" alt="" width="33%" />
+    </div><br/>
+
+    <!--
+        Alineacion de Texto en vertical ↓ 
+        alinear el texto a la imagen lo realizaremos con el atributo align, seguidamente de los valores:
+        top, middle, botton
+    -->
+    <h2>Imagen Con texto en Vertical</h2>
+    <img src="images/boladelmundo.png" width="33%" align="top"/>La Tierra txt arriba<br/>
+    <img src="images/boladelmundo2.png" width="33%" align="middle"/>La Tierra txt al medio<br/>
+    <img src="images/boladelmundo3.png" width="33%" align="bottom"/>la Tierra txt abajo-final<br/>
+
+
+<!--
+    Tratamiento de texto rodeando a la imagen
+    Atributos de márgen:
+    1. vspace uso de margen vertical=valor en pixel
+    2.hspace uso de margen horizontal=valor en pixel
+-->
+<h2>Imagen y texto alrededor</h2>
+<img src="images/boladelmundo.png" align="left" hspace="50" vspace="10" width="33%"/>
+<p align="justify" style="background-color: ivory;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero perferendis a quidem possimus ullam suscipit officiis beatae earum, cupiditate aliquam.
+    Doloribus molestiae modi, facilis architecto voluptate corrupti ratione neque quos, eius nam eos autem error necessitatibus veniam recusandae fugit debitis!
+    Ducimus consequatur aspernatur ipsam atque pariatur, vel sequi omnis vitae doloribus ea quos saepe quas. Pariatur quam aperiam maiores quasi!
+    Incidunt maxime quibusdam, dolorem voluptate nihil quis impedit minima, quas optio dignissimos est doloremque pariatur sint excepturi reiciendis, ipsa obcaecati.
+    Autem magni natus vero sed, nobis illum voluptates sint assumenda earum omnis ad provident accusantium a placeat molestias quasi repudiandae?
+    Similique voluptatem consequuntur explicabo nisi provident officia iusto atque laborum maiores! Beatae, unde nostrum tempore laboriosam quisquam dignissimos minima quaerat.
+    Quia voluptates perspiciatis quibusdam accusamus voluptas maxime, nobis libero, corporis, ullam nam necessitatibus recusandae dolores! Maiores, aspernatur debitis. Necessitatibus, ex.
+    Nulla quos labore dolorem odio ex eum voluptatum, eaque ipsa natus quae odit quam atque debitis beatae perspiciatis dignissimos a?
+    Aperiam dolorem neque aut animi distinctio modi quo ad illo harum doloremque voluptatibus et minus eos saepe repudiandae, quae fuga.
+    Voluptas eum, quis obcaecati sequi nihil veniam officiis tenetur quo neque illum minus commodi dolorem saepe repellendus minima ex exercitationem.
+</p><br clear="left"/>
+<!--
+    Los atributos <br/> será clear, con los valores
+    1. left Buscará el primer margen libre a la izquierda
+    2.right Buscará el primer margen libre a la derecha
+    3. all Buscará margen libre a ambos lados
+-->
+<img src="images/boladelmundo.png" align="right" hspace="20" vspace="15" width="33%"/>
+<p align="justify" style="background-color: lightgoldenrodyellow;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero perferendis a quidem possimus ullam suscipit officiis beatae earum, cupiditate aliquam.
+    Doloribus molestiae modi, facilis architecto voluptate corrupti ratione neque quos, eius nam eos autem error necessitatibus veniam recusandae fugit debitis!
+    Ducimus consequatur aspernatur ipsam atque pariatur, vel sequi omnis vitae doloribus ea quos saepe quas. Pariatur quam aperiam maiores quasi!
+    Incidunt maxime quibusdam, dolorem voluptate nihil quis impedit minima, quas optio dignissimos est doloremque pariatur sint excepturi reiciendis, ipsa obcaecati.
+    Autem magni natus vero sed, nobis illum voluptates sint assumenda earum omnis ad provident accusantium a placeat molestias quasi repudiandae?
+    Similique voluptatem consequuntur explicabo nisi provident officia iusto atque laborum maiores! Beatae, unde nostrum tempore laboriosam quisquam dignissimos minima quaerat.
+    Quia voluptates perspiciatis quibusdam accusamus voluptas maxime, nobis libero, corporis, ullam nam necessitatibus recusandae dolores! Maiores, aspernatur debitis. Necessitatibus, ex.
+    Nulla quos labore dolorem odio ex eum voluptatum, eaque ipsa natus quae odit quam atque debitis beatae perspiciatis dignissimos a?
+    Aperiam dolorem neque aut animi distinctio modi quo ad illo harum doloremque voluptatibus et minus eos saepe repudiandae, quae fuga.
+    Voluptas eum, quis obcaecati sequi nihil veniam officiis tenetur quo neque illum minus commodi dolorem saepe repellendus minima ex exercitationem.
+</p>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>LISTAS</h1>
+    <!--
+        ---------------LISTAS ORDENADAS-------------------------
+        Serán listas que nos ayudan a presentar elementos en un orden determinado.
+        Estos elementos iran numerados o computados. 
+        la sintaxis:
+        <ol>
+            <li></li>
+        </ol>
+       1.Atributo-> [type] siendo el tipo de numeracion o marcacion
+        con los siguiente valores:
+        [type="1"] por defecto, numeracion 1,2,3...)
+        [type="a"] establecerá a,b,c,..)
+        [type="A"] establecerá A,B,C..)
+        [type="I"] establecerá I,II,III,IV..)
+      2.Atributo-> [start] nos permite especificar, mediante un valor numerico, porqué numero o letra
+      empezará el primer elemento de la lista
+        
+    -->
+    <h2>Listas Ordenadas</h2>
+    Ejemplo1:            
+    <ol>
+        <li>Niñez</li>
+        <li>Adolescencia</li>
+        <li>Juventud</li>
+    </ol>
+    Ejemplo2:
+    <ol type="I">
+        <li>Maria</li>
+        <li>Juan</li>
+        <li>Luis</li>
+        <li>Jorge</li>
+        <li>Marta</li>
+    </ol>
+    Ejemplo3:
+    <ol type="a">
+        <li>Oferta 1 - Claveles a 1€ -</li>
+        <li>Oferta 2 - Tulipanes a 2€ -</li>
+    </ol>
+    <p> La oferta 3 tendra un 10%dto</p>
+    <ol type="a" start="3">
+        <li>Oferta 3 - Rosas a 4 € -</li>
+    </ol>
+    <h2>Listas No Ordenadas</h2>
+<!--
+    No van numeradas, establecerá como orden con imagen parecida a las viñetas
+    de word. Sintaxis:
+    <ul>
+    <li></li>
+    </ul>
+    1. Atributo -> [type], que admitirá los siguiente valores:
+        [type="circle"] simbolo de circulo sin rellenar
+        [type="square"] simbolo de un cuadrado
+        [type="disk"] simbolo de circulo relleno
+-->
+Ejemplo 4:
+<ul type="circle" style="font-size: xx-large;">
+    <li style="font-style: italic; color: green;">Leche</li>
+    <li>Tomates</li>
+    <li><s>Sal</s></li>
+    <li>Pan</li>
+    <li>Naranjas</li>
+</ul>
+Ejercicio 1: Lista No ordenada con simbolo circulo relleno y
+ elementos de la letra en cursiva, color verde y tamaño medio
+
+ <h2>Listas de definicion</h2>
+ <!--
+     Listas de definicion o glosario, vienen a establecer jerarquia de descripcion.
+     sintaxis:
+     <dl> Lista de definicion
+        <dt> Palabra o concepto a definir
+            <dd>definicion</dd>
+        </dt>
+     </dl>
+      -->
+Ejemplo5:
+<dl style="color: grey;">
+    <dt><dfn><u>HTML</u></dfn></dt>
+    <dd>Metalenguaje para elaborar contenido web</dd>
+    <dt><u>CSS</u></dt>
+    <dd>Lenguaje para generar estilos globales y en cascada</dd>
+    <dt><strong>JavaScript</strong></dt>
+    <dd>Lenguaje que dinamiza el contenido web, ejecutandose en nuestro cliente</dd>
+</dl>
+
+</body>
+</html>
