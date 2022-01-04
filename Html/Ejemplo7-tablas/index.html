@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLAS</title>
+</head>
+<body>
+    <h1 style="text-align: center;"><u>TABLAS</u></h1>
+    <!--
+        las tablas:
+        Se utilizan los mismos conceptos de filas, columnas, cabeceras, titulos
+        como en cualquier otro entorno.
+        SINTAXIS:
+            Etiqueta        Descripcion
+            <table>         Etiqueta contenedora de la tabla
+            <tr>            table row. Etiqueta contenedora de cada FILA
+            <td>            table data. Etiqueta contenedora de cada una de las celdas
+            <th>            table header. Etiqueta contenedora de las cabeceras
+        <caption>           Etiqueta contenedora para los titulos de las tablas
+    -->
+    <h2>Ejemplo tabla simple</h2>
+
+    <table border="1" bgcolor="grey">
+        <caption>Numeracion del 1 al 12</caption>
+        <tr>
+            <td>UNO</td>
+            <td>DOS</td>
+            <td>TRES</td>
+        </tr>
+        <tr>
+            <td>CUATRO</td>
+            <td>CINCO</td>
+            <td>SEIS</td>
+        </tr>
+        <tr>
+            <td>SIETE</td>
+            <td>OCHO</td>
+            <td>NUEVE</td>
+        </tr>
+        <tr>
+            <td>DIEZ</td>
+            <td>ONCE</td>
+            <td>DOCE</td>
+        </tr>
+    </table>
+    <!--
+        COMBINACION DE CELDAS
+        Atributos       Valor       Descripcion
+        colspan         numero      Número de columnas que la celda abarcará
+        rowspan         numero      Número de filas que la celda abarcará
+    -->
+<h2 style="text-align: center;">Combinar celdas</h2>
+<table border="2" style="text-align: center;" align="center">
+<tr>
+    <th>Columna 1</th>
+    <th>Columna 2</th>
+    <th>Columna 3</th>
+    <th>Columna 4</th>
+</tr>
+<tr>
+    <td colspan="2">Dato</td><!--uniendo columnas-->
+    <!--<td>Dato<td>           sobraria este dato-->
+    <td>Dato</td>
+    <td rowspan="3">Dato</td>
+</tr>
+<tr>
+    <td>Dato</td>
+    <td>Dato</td>
+    <td>Dato</td>
+    <!-- <td>Dato</td>--> 
+</tr>
+<tr><td colspan="2" rowspan="2">Dato</td>
+   <!--<td>Dato</td> -->  
+    <td>Dato</td>
+    <!--<td>Dato</td>--> 
+</tr>
+<tr>
+    <td>Dato</td>
+    <td>Dato</td>
+</tr>
+</table>
+<!--
+    Agrupacion de columnas
+    Tendremos unas etiquetas para poder agrupar o seleccionar columnas.Puediendo realizar tareas sobre el conjunto.
+    e.d: asociarle una clase determinada o darle un estilo (columna) Sintaxis:
+    Etiqueta            Descripcion
+    <colgroup>      Etiqueta contenedora interrelacional de columnas. Crea agrupacion 
+    <col>           Etiqueta que representa a las comumnas de la tabla
+-->
+<h2>Agrupacion Columnas</h2>
+
+<table>
+    <caption>EL PERIODICO DIGITAL</caption>
+    <tr>
+        <th>NEW</th>
+        <th>DEPORTES</th>
+        <th>TIEMPO</th>
+    </tr>
+    <tr>
+        <td>Nacionales</td>
+        <td>Futbol</td>
+        <td>Madrid</td>
+    </tr>
+    <tr>
+        <td>Internacionales</td>
+        <td>Baloncesto</td>
+        <td>España</td>
+    </tr>
+    <tr>
+        <td>Sucesos</td>
+        <td>Tenis</td>
+        <td>Europa</td>
+    </tr>
+    <colgroup>
+        <col style="background-color: lemonchiffon;"  />
+        <col span="2" style="background-color: lightsalmon;" />
+    </colgroup>
+<!--El atributo span=2, indica que se aplica a las dos siguientes columnas-->
+</table><br/>
+<h2 style="text-align: center;">Ejercicio:[tabla de 2 columnas y 3 filas, fondo negro de la cabecera, letras en azul, tabla centrada, titulo
+     y añadir un enlace]</h2>
+<table align="center">
+    <caption>Principales Buscadores</caption>
+    <tr bgcolor="#00000" style="color: skyblue;">
+        <th>Buscador</th>
+        <th>Referencia</th>
+    </tr>
+    <tr>
+        <td><a href="https://www.google.es">Google</a></td>
+        <td>America Centro-Oriental</td>
+    </tr>
+    <tr>
+        <td><a href="https://www.bing.com">Bing</a></td>
+        <td>Europa-CentroAsiatico</td>
+    </tr>
+</table>
+
+
+</body>
+</html>

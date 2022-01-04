@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+
+<body>
+    <!--
+        ---------------CARACTERISTICAS VIDEO--------------
+
+        Atributo            Valor                      Descripcion
+    1.    src=""          URL/archivo.extension     Contenido a reproducir
+    2.  poster=""         URL/archivo.ext(local)    Muestra una imagen a modo de presentacion
+    3.  preload=""        auto | metadata | none    Indica como realiza la precarga del video
+    4. mediagroup=""           nombre               Hace referencia al nombre de un grupo de contenidos
+    5. autoplay=""        Boolean(true || false)    Reproduccion automatica.
+    6. loop=""            Boolean (true || false)   reproduce continuamente el ciclo
+    7. muted=""           Boolean (true || false)   Establece el video sin sonido
+    8. controls=""        Boolean (true || false)   Muestra los controles:play,amplian,navbar
+    9. width                         pixeles                 ancho
+    10. height                       pixeles                 alto
+sintaxis:
+        <video>
+            <source />
+        </video>
+
+-->
+    <video width="20%" poster="images/toppng.com-icono-de-reproductor-de-musica-980x980.png" autoplay="true"
+        controls="controls" preload="none">
+        <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+    </video>
+    <!--
+    ESTRUCTURA DE VIDEO RECOMENDADO   ↓ 
+-->
+    <video width="33%" autoplay="true" loop="true" muted="true" controls="controls"
+        src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4">
+    </video>
+
+    <!--
+    Youtube, Vimeo, Dailymotion y otros, utilizan la etiqueta <iframe>, como detalle reconoceremos
+    el atributo allowfullscream, nos permite que los videos se puedan mostrar en pantalla completa
+-->
+    <iframe src="https://www.youtube.com/embed/j8fHNdrZTSI" title="YouTube video player" frameborder="0" allow="accelerometer; 
+    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+
+    <iframe src="https://www.dailymotion.com/embed/video/x33md7g?autoplay=1" allowfullscreen allow="autoplay">
+    </iframe>
+
+</body>
+
+</html>

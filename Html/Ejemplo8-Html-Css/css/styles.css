@@ -1,0 +1,49 @@
+/*
+CSS
+Definido como hojas de estilo en cascada(Cascading style sheets), no es mas que otro lenguaje
+usado para definir la presentacion de un documento estructurado escrito en HTML.
+...La genialidad se encuentra detrás del desarrollo de Css, que separa la estructura de su presentacion.
+*/
+/*
+1. ESTILO PARA UNA ETIQUETA o mas
+*/
+h1,h2{
+    color: aqua;
+    text-align: center;
+}
+/*
+2.Estilo para una etiqueta que tenga un identificador(id)*/
+#p2{
+    background-color: darkorange;
+    font-size: x-large;
+    font-weight: bold;
+}
+/*
+3.Estilo estandar para aplicar con el atributo clase(class)
+*/
+.verde{
+    color: green;
+    text-align: center;
+}
+p.amarillo{
+color:yellow;
+}
+/*
+El selector de clase(class) sera = (".")
+El selector de Identificador(id) será=("#")  
+--> La diferencia que encontramos entre una id y una class, será
+que el id se puede usar para identificar un solo elemento, mientras
+que un class se puede usar para agrupar mas de uno
+*/
+table,th,td{
+    border: 2px solid mediumblue;
+    border-collapse: collapse;
+    text-align: center;
+
+}
+ol{
+    list-style: upper-roman;
+}
+ul{
+    list-style: square;
+}

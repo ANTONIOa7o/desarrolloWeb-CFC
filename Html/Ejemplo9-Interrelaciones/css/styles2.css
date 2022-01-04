@@ -1,0 +1,50 @@
+p{
+    background-color: #ededed;
+    font-family: "Open Sans",sans-serif;
+}
+h2{
+    text-align: center;
+    font-size: xx-large;
+}
+
+nav{
+    width: 300px;
+    background-color: #e4d9e0;
+    margin:40px auto;
+}
+
+li a{
+    color: #238cf5;
+}
+
+span{
+    background: #68aaec;
+    padding: 30px;
+    color: white;
+    font-size: 50px;
+    display: block;
+}
+span::after{
+    float: right;
+    right: 10%;
+}
+
+#tocar{
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+    }
+#tocar:checked + .desliz{
+    height: 500px;
+}
+.desliz{
+    clear: both;
+width: 100%;
+height: 0px;
+overflow: hidden;
+text-align: center;
+transition: height .4s ease;
+}
+.desliz li{
+padding: 30px;
+}
