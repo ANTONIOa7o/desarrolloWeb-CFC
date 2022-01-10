@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: navy;
+}
+div{
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+header{
+    width: 980px;
+    height: 120px;
+    background-color: gold;
+}
+nav{
+    width: 980px;
+    height: 60px;
+    background-color: navy;
+    color: gold;
+    float: left;
+}
+section{
+    float: left;
+    width: 780px;
+    height: 420px;
+    background-color: lightgrey;
+}
+article{
+    float: left;
+    width: 780px;
+    min-height: 200px;
+    background-color: #eee;
+    border-bottom: 1px solid lightgrey;
+}
+/*
+min-height:define la altura maxima de un elemento
+Si el contenido es < qsue la atura minima, se aplica sin mas
+No obstante el es > que la altura minima, la propiedad min-height no tendra
+efecto alguno.
+max-height:?
+*/
+aside{
+    float: right;
+    width: 200px;
+    height: 220px;
+    background-color: salmon;
+    border-bottom:10px solid lightgrey;
+}
+footer{
+    float: left;
+    width: 980px;
+    background-color: gold;
+    height: 80px;
+}
+footer p{
+    padding-right: 20px;
+    text-align: left;
+}

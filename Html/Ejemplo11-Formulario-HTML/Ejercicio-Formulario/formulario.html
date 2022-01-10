@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div style="margin: 0 auto;text-align:left; width: 400px;">
+        <form action="">
+
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label style="color: crimson;">Nombre:</label>
+                <input type="text" name="nombreParam" id="" maxlength="15" size="21"
+                    placeholder="Escribe tu nombre" /><br />
+
+                <label>Apellidos</label>
+                <input type="text" name="apellidoParam" size="21" maxlength="15" readonly="true" disabled="true"
+                    value="Cuadrado" /><br />
+
+                <label>Password</label>
+                <input type="password" name="pwParam" pattern=".{6,}" title="Seis o mas Caracteres" /><br />
+                <!--
+                    Pattern tipico: Contenga al menos un numero, con letras mayusculas y minusculas, con un 
+                    minimo de 8 caracteres
+                    pattern="(?=.*/d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                -->
+                <label> Sexo </label>
+                <input type="radio" name="sexoParam" value="hombre" checked="true" />Hombre
+                <input type="radio" name="sexoParam" value="mujer" />Mujer<br />
+
+                <label>Aficiones</label>
+                <input type="checkbox" name="aficionParam" value="cine">Cine
+                <input type="checkbox" name="aficionParam" value="muscia">Musica
+                <input type="checkbox" name="aficionParam" value="teatro">Teatro
+                <input type="checkbox" name="aficionParam" value="deporte">Deporte<br />
+            </fieldset>
+            <fieldset>
+                <legend>Datos Academicos</legend>
+                <label> Nivel de Estudios</label>
+                <select name="estudiosParam">
+                    <option>---selecciona------</option>
+                    <option value="nada">Sin Estudios</option>
+                    <option value="eso">ESO</option>
+                    <option value="gm">Grado Medio</option>
+                    <option value="gs">Grado Superior</option>
+                    <option value="master">Master</option>
+                </select><br/>
+                <label>Idiomas</label>
+                <select name="idiomasParam" multiple="true">
+                    <option value="ingles">Ingles</option>
+                    <option value="f">Frances</option>
+                    <option value="a">Aleman</option>
+                    <option value="m">Mandarin</option>
+                    <option value="i">Italiano</option>
+                </select><br/>
+                <label>Tu Curriculu:</label>
+                <input type="file" name="cvParam"><br/>
+            </fieldset>
+            <label>Danos tu opinion</label>
+            <textarea name="opinionParam" cols="51" rows="10">Comentanos...</textarea><br/>
+            Indique su valoracion del Formulario (Regular, Bueno o Muy bueno):
+            <input type="range" name="rango" min="1" max="3" list="lista-rango"/>
+            <datalist id="lista-rango">
+                <option value="1">Regular</option>
+                <option value="2">Bueno</option>
+                <option value="3">Muy Bueno</option>
+            </datalist><br/>
+            
+            <div align="middle">
+                <input type="submit" value="Enviar"/>
+                <input type="reset" value="Limpiar"/>
+            </div>
+
+        </form>
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

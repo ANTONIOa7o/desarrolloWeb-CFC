@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <!--
+                     -------FORMULARIOS-----------
+    Un formulario , es un conjunto de elementos que permite introducir datos de los
+    usuarios. Estos datos por lo general serán texto, opciones, numeros...
+    Sintaxis:
+    Etiqueta contenedora <form></form>
+
+                        Agrupamos Contenidos
+        Tendremos dos etiquetas contenedoras principales para agrupar, 
+        <fieldset></fieldset>: delimitar un conjunto de directivas que queramos destacar
+        <legend></legend>: Titulo Formulario
+
+                    -------Introduccion de datos:------------
+        
+                    -A- TEXTO
+        Etiqueta principal será <input/> asociada a los siguientes atributo
+        * type="" será la naturaleza del texto, si va a ser un password,numero, texto, hidden...
+        * name="" nombre de la variable que va a guardar dicho dato.
+        *size="" define tamaño o valor del numero caracteres.
+        *maxlength, limita el numero de caracteres
+        *value="", aparecerá por defecto estableciendo un valor
+        *align=""
+        *disable="", elemento aparecerá desactivado
+        readonly="", impide modificar el contenido del elemento
+
+
+                    -B- MENUS
+
+        Cuando queremos que el usuario, en vez de introducir los caracteres, escoja entre
+        varias opciones. Estos menus los construiremos a traves de la etiqueta <select>, como la de
+            una persiana desplegable. Y a traves del <option> se estableceran los distintos elementos.
+            Sin olvidar <datalist>, ofreciendo la posibilidad de crear una lista directa con valores
+        Los atributos en <select>
+            name: para dar nombre al menu
+            size: cuantas opciones que se se muestren
+            multiple: dejameos escoger mas de una opcion
+        Los atributos de <option>
+            selec: como opcion seleccionada por defecto
+            value: define el valor que tomará la variable
+
+            Envido de datos
+        Necesitaremos como condicion necesaria, pero no suficiente, el botón envio.
+        lo definiremos con la siguiente sintaxis:
+                <input type="submit" />
+                Aparece boton de envio, al pulsar nos permite enviar los datos a donde?
+                definido por un atributo de la etiqueta <form> es decir: action="". 
+                El value, atributo del submit, será el valor que le demos al accion del boton.
+        Y para el borrado de datos:
+                <input type="reset"/>
+        
+    
+        
+
+    -->
+    <div style="margin: 0 auto; text-align: left; width: 350px;">
+        <h2>FORMULARIO HTML</h2>
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label>Nombre:</label>
+            <input type="text" name="nombre" minlength="3" maxlength="20" /><br />
+
+            <label>Apellidos:</label>
+            <input type="text" name="apellidos" list="apellidosList" /><br />
+            <datalist id="apellidosList">
+                <option value="Lopez">Lopez</option>
+                <option value="Sanz">Sanz</option>
+                <option value="Sanchez">Sanchez</option>
+                <option value="Gutierrez">Gutierrez</option>
+            </datalist>
+            <label>Edad:</label>
+            <input type="number" name="edad" min="18" /><br />
+
+            <label>Fecha de nacimiento</label>
+            <input type="date" name="nacimiento" /><br />
+        </fieldset>
+        <fieldset>
+            <legend>RESERVAS:</legend>
+            <label>Escoge tu Aventura</label>
+            <select name="experiencia">
+                <option>---selecciona----</option>
+                <option>Experiencia Descenso Rapidos (150€/persona)</option>
+                <option>Experiencia de Velero (135€/dia)</option>
+                <option>Experiencia Surf (90€/persona-2 horas)</option>
+                <option>Experiencia Glamping (35€ noche/persona)</option>
+            </select><br />
+            <label>Fecha de reserva</label><br />
+            <input type="date" name="reserva" /><br />
+            <label>Fecha y hora de entrada</label>
+            <input type="datetime-local" /><br />
+            <label>Fecha y hora de salida</label>
+            <input type="datetime-local" /><br />
+
+            <label> Elige el color de tu equipo</label>
+            <input type="color" name="color" />
+        </fieldset>
+        <fieldset>
+            <legend>Contacto</legend>
+            <label>E-mail</label>
+            <input type="email" name="email" />
+        </fieldset>
+        <div align="middle">
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Borrar" />
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
