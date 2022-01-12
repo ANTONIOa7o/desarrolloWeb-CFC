@@ -1,0 +1,60 @@
+#caja{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    font-size: 1em;
+    animation-name: animacion1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: relative;
+    text-align: center;
+}
+/*
+ @keyframes permite a los autores controlar los pasos intermedios en una secuencia de 
+ animación CSS mediante el establecimiento de keyframes (o puntos de trayectoria) a lo largo
+ de la secuencia de animación que debe ser alcanzado por determinados puntos durante la
+  animación. Esto le da un control más específico sobre los pasos intermedios de la secuencia
+   de animación que se obtiene al dejar que el navegador maneje todo automáticamente.
+-->  se crea una regla de @keyframes con un nombre que es utilizada por la propiedad
+ animation-name
+*/
+
+@keyframes animacion1{
+    0%{
+        background-color: orange;
+        font-size: 1em;
+        
+    }
+/*
+la propiedad transform: te permite modificar el espacio de coordenadas del modelo de formato
+ visual. Usándola, los elementos pueden ser trasladados, rotados, escalados o sesgados
+  de acuerdo a los valores establecidos.
+*/
+    25%{
+        background-color: orangered;
+        font-size: 4em;
+        width: 400px;
+        transform: translateX(400px);
+        border: 0.1em solid black;
+        
+    }
+
+    50%{
+        background-color: yellow;
+        font-size: 1em;
+        width: 300px;
+        transform: translateX(400px) translateY(400px) rotate(45deg);
+       
+        
+    }
+
+    75%{
+        background-color: yellowgreen;
+        font-size: 3em;
+        width: 300px;
+        transform: translateY(400px);
+        opacity: 0,5;
+        
+       
+    }
+}
