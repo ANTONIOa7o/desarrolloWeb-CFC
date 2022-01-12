@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotacion x,y</title>
+    <style>
+        div{
+            float: left;
+            width: 20em;
+            height: 20em;
+            margin: 5em;
+            border-radius: 2em;
+            box-shadow: 1em 1em 1em lightblue;
+            background-color: lightskyblue;
+        }
+    /*
+    Las rotaciones->Sintaxis= transform: rotate (los grados de giro,[ANGULO] 
+    en el sentido de las agujas del reloj,)
+    */
+        #cuadro1{
+            transform: rotate(30deg);
+        }
+        #cuadro2{
+            transform: rotate(-30deg);
+        }
+        /*
+        Las rotaciones 3d, como su nombre indica, utilizará las variables
+        x, y, z y el angulo)
+        */
+        #cuadro3{
+            transform: rotate3d(1,1,0,60deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="cuadro1"></div>
+    <div id="cuadro2"></div>
+    <div id="cuadro3"></div>
+</body>
+</html>

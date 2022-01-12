@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accion Boton</title>
+    <style>
+        img {
+            width: 150px;
+            height: 50px;
+            border-radius: 30%;
+        }
+
+        div {
+            text-align: center;
+            width: 150px;
+            height: 50px;
+           border-radius: 30%;
+            border: 2px solid black;
+            box-shadow: 2px 2px 5px gray;
+            background-color: cornsilk;
+            /*
+    La pseudo clase :active ; 
+Representa un elemento (boton) donde el usuario genera la activacion.Comienza
+cuando el usuario presiona el boton primario del raton. Donde se activa la accion
+pero no termina. e.d: Decimos que el elemento es activo cuando el usuario hace click
+en ese elemento peron  antes de levantar el dedo del boton del raton.
+     */
+        }
+
+        img:active {
+            background: repeating-linear-gradient(rgb(113, 206, 77) 10%,
+                    rgb(92, 145, 115) 20%,
+                    rgb(56, 173, 48)30%);
+
+        }
+
+        p:active {
+            text-align: right;
+            background-color: greenyellow;
+            font-size: xx-large;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet.
+        Perspiciatis qui et perferendis sapiente!
+        Molestias atque et inventore iure!
+        Iusto sint ex debitis magni.
+        At totam consequuntur non doloribus.
+    </p>
+    <div>
+        <a href="https://www.google.com"><img src="images/google.png"></a>
+    </div>
+
+
+</body>
+
+</html>

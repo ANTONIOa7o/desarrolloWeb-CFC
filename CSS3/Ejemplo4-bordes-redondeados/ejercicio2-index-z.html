@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anillos</title>
+</head>
+
+<body>
+    <style>
+        div {
+            height: 12.5em;
+            width: 12.5em;
+            border: 12px solid;
+            border-radius: 50%;
+            margin: 1rem;
+        }
+
+        .container {
+            align-items: center;
+            display: flex;
+            /*
+    Podremos especificar la alineacion de los elementos que hay dentro, ayudando
+    a su tamaño y a la distribucion de los espacios, tanto en la direccion horizontal
+    como vertical
+    */
+            justify-content: center;
+            transform: rotate(90deg);/*los anillos giraran hacia la derecha en 90*/
+        }
+
+        .rojo {
+            color: #ca2e2e;
+        }
+
+        .amarillo {
+            color: #ffa600;
+        }
+
+        .verde {
+            color: #19a019;
+        }
+
+        .azul {
+            color: #3498db;
+        }
+
+        .negro {
+            color: black;
+            position: relative;
+            z-index: 1;
+
+        }
+        .debajo{
+            position: relative;
+            right: 8.125rem;
+        }
+        /* 
+        Los media types, describirá la categoria general del dispositivo
+        */
+        @media screen and (max-width: 750px){
+            div{
+                width: 90px;
+                height:90px;
+            }
+            .debajo{
+                right: 7em;
+            }
+        }
+            
+       
+    </style>
+    <section class="container">
+        <section>
+            <div class="rojo"></div>
+            <div class="negro"></div>
+            <div class="azul"></div>
+        </section>
+
+
+        <section class="debajo">
+            <div class="verde"></div>
+            <div class="amarillo"></div>
+        </section>
+    </section>
+</body>
+
+</html>

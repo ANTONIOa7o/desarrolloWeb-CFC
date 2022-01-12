@@ -1,0 +1,52 @@
+
+div{
+    float: left;
+    width: 30%;
+    height: 100px;
+    margin: 20px;
+    background-color: lightgrey;
+}
+
+#defecto{
+    background: linear-gradient(blue,violet,yellow);
+}
+#izda_drch{
+    background: linear-gradient(to right,blue,violet, yellow);
+}
+#drch_izda{
+    background: linear-gradient(to left, blue,violet,yellow);
+}
+#arriba{
+    background: linear-gradient(to top, blue,violet,yellow);
+}
+#diagonal_dcha{
+    background: linear-gradient(to bottom right, blue,violet, yellow);
+}
+#diagonal_izda{
+    background: linear-gradient(to top left,blue,violet, yellow);
+}
+#centro{
+    background: radial-gradient(blue,violet,yellow);
+    height: 300px;
+  }
+  #espacio{
+      background: radial-gradient(blue 10%,violet 60%,yellow 90%);
+      height: 300px;
+      border-radius: 50%;
+  }
+  #circulo{
+      background: radial-gradient(circle,blue,violet,yellow);
+  }
+  #elipse{
+      background: radial-gradient(ellipse,blue,violet,yellow);
+  }
+  #repetir{
+      background: repeating-radial-gradient(blue 10% ,violet 20%, yellow 30%);
+  }
+  #opacidad{
+      width: 75%;
+      height: 200px;
+      background: linear-gradient(to bottom right, white 70%, blue);
+  }
+
+

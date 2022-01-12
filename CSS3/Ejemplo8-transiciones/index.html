@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transicion Simple</title>
+    <style>
+/*
+Las transiciones una forma de animar los cambios de las propiedades de CSS, en vez
+como los cambios se realizaban de manera subita, es la ventaja añadida de CSS3. Ya
+que ademas nos permite definir transiciones entres dos estados de un elemento. Lo
+utilizaremos a traves de la pseudo-clase :hover
+*/
+#caja{
+    width: 30em;
+    min-height: 10em;
+    background-color: linen;
+    border-radius: 2em;
+    padding: 1em;
+    transition: width 2s, height 4s, background-color 6s;
+    font-weight: bold;
+    
+}
+
+/*
+:hover; Esta pseudo-clase se entiende de la siguiente manera: Cuando el usuario interactua
+con un elemento, pero no necesariamente lo activa. Generalamente se activa cuando el usuario
+se desplaza sobre el elemnto con el cursor.
+*/
+#caja:hover{
+    width: 70%;
+    min-height: 20px;
+    background-color: gray;
+}
+
+.menu{
+    background-color: rgb(212, 205, 205);
+    text-decoration: none;
+    color: rgb(95,13,13);
+    border-color: black;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    box-shadow: 2px 2px 3px rgb(139 ,137 ,137);
+    padding: 10px;
+    border-radius: 13px;
+    margin: 4px;
+    justify-content: center;
+    transition: background-color,0.5s;
+}
+
+.menu:hover{
+background-color: rgb(238, 212, 212);
+color: black;
+box-shadow: 2px 2px 3px rgb(139 ,137 ,137);
+font-size: xx-large;
+border-radius: 29px;
+transition: backgroun-color,0.5s border-radius,0.5s;
+}
+
+.centro{
+    margin: 25px;
+    padding: 10px;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div id="caja">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, reiciendis.
+Dolor assumenda dignissimos quas quo laboriosam iusto nihil incidunt laudantium!
+Error harum corrupti saepe dolorem rem fugiat natus ex eum!
+Tempora magni earum voluptatibus et architecto nostrum consequuntur. Soluta, officia?
+Deserunt reiciendis voluptates, ullam facilis mollitia dolor? Nisi, minima iusto?
+Quo excepturi assumenda exercitationem expedita eligendi earum modi veritatis cumque.
+Sapiente pariatur error eligendi labore repudiandae eveniet excepturi fugit perferendis.
+Perspiciatis totam nisi dolore porro corporis asperiores nobis aliquid facilis!
+Ipsa illum consequuntur voluptatibus voluptatum facere nam dolor quasi eveniet?
+Molestiae, hic! Voluptatibus neque minima necessitatibus ex impedit beatae obcaecati!
+    </div>
+
+
+
+
+    <div class="centro">
+        <tr>
+            <th><a class="menu" href="">INICIO</a></th>
+            <th><a class="menu" href="">Reservas</a></th>
+            <th><a class="menu" href="">Ofertas</a></th>
+            <th><a class="menu" href="">Nuestro Catalogo</a></th>
+        </tr>
+    </div>
+</body>
+</html>

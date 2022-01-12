@@ -1,0 +1,15 @@
+html {
+    font-size: 32px;
+}
+.em li{
+    font-size: 1.3em;
+}
+.rem li{
+    font-size: 1.3rem;
+}
+/* 1 em=16px*/
+/* PORCENTAJES */
+
+li{
+    font-size: 80%;
+}

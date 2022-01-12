@@ -1,0 +1,84 @@
+
+/*
+Asociacion de selector conjugando etiqueta y atributo
+*/
+input:disabled{
+    color: red;
+}
+/*Recreacion de bootstrap, actua sobre elemento que adquiere el foco*/
+input:focus{
+    border: thick solid navy;
+}
+/*
+Solo los campos de tipo checkbox  que sean marcados su etiqueta se muestre
+roja y en negrita, para ello uilizaremos el selector adyacente (+) aplicará el 
+estilo al asociado a el.
+*/
+input[type=checkbox]:checked+label{
+    font-weight: bold;
+    color: red;
+}
+
+/*
+Seleccion de elementos que comiencen la directiva planteada
+*/
+ol li[id^='J']{
+    background-color: yellow;
+}
+/*
+Seleccion de elementos que terminan en una directiva planteada
+*/
+ol li[id$='a']{
+    background-color: aqua;
+}
+/*
+Seleccion de elementos que contengan una directiva planteada
+*/
+ol li[id*='d']{
+    background-color: deeppink;
+}
+
+table,tr,td{
+    width: 30%;
+    border: thin solid navy;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+/*
+pseudo-clase= :nth-child(an+b), nos ayudará a seleccionar varios elementos hijo de 
+la clase, indicando su posicion, según el argumento (o formula)
+*/
+
+tr:nth-child(odd){
+    background-color: lemonchiffon;
+}
+tr:nth-child(even){
+    background-color: lightsalmon;
+}
+/*
+#mitabla td:nth-child(odd){
+background-color: yellow;
+}
+*/
+ul li:first-child{
+    background-color: palegreen;
+}
+
+ul li:nth-child(7){
+    background-color: purple;
+}
+/*
+Podemos contar con 4 pseudo-elementos muy comunes:
+:first-child (Selecciona primer elemento)
+:first-letter(Selecciona la primnera letra)
+:before Nos posiciona al inicio del contenido
+:after, Nos posiciona al final del contenido del elemento
+Por ultimo el 
+:nth-of-type(), en funcion de la posicion del elemento
+*/
+p:nth-of-type(1){
+    font-weight: bold;
+}
+p:nth-of-type(3n+0){
+    color: red;
+}

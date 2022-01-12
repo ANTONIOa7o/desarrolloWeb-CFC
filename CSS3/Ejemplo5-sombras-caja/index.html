@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras Caja</title>
+</head>
+<body>
+    <style>
+        div{
+            width: 30%;
+            background-color: hotpink;
+            padding: 15px;
+            margin: 30px;
+        }
+        /*
+        Añade efectos de sombra alrededor de un elemento. se pueden definir
+        multiples, separados por coma. Trabaja igual que las sombras de texto
+        x, y , radio de desenfoque(mayor valor, mayor difuminacion, sombra mas grande).
+        , igualmente color relativo al elemnto
+        */
+        #cuadro1{
+            box-shadow: -15px -10px 5px rgb(136,85,111) ;
+            border-radius: 20px;
+
+        }
+        #cuadro2{
+            box-shadow: 10px 10px 10px rgb(175, 111, 144),
+            20px 20px 10px rgb(136, 85, 111),
+            30px 30px 10px rgb(92, 61, 77);
+            border-radius: 20px;
+
+        }
+    </style>
+
+    <div id="cuadro1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Blanditiis impedit iure magnam. Saepe obcaecati ex doloremque.
+        Consequuntur assumenda expedita quia dicta, praesentium voluptatem porro!
+        Ducimus nesciunt itaque consequatur, odit cum corrupti ad.
+        Quam autem magnam maiores, dignissimos fugit dolores non!
+    </div>
+    <div id="cuadro2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Aspernatur eum quo, rem id blanditiis tempore tenetur.
+        Excepturi pariatur amet nostrum voluptate distinctio culpa optio?
+        Ducimus sunt, nemo distinctio adipisci praesentium facilis quas.
+        Deserunt corporis inventore officiis velit, modi aliquid non.
+    </div>
+</body>
+</html>

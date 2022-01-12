@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h2>MEDIDAS em y rem</h2>
+    <!--
+em: Equivale a la anchura de la letra M("eme Mayuscula") el tipo y tamaño de letra
+del elemento. 
+rem: igual que em, con  la diferencia que esta actua en la raiz(DOM), La letra que se usa
+por defecto
+   -->
+    <ul class="em">
+        <li>UNO</li>
+        <li>DOS</li>
+        <li>TRES
+            <ul>
+                <li>Tres 1.1</li>
+                <li>Tres 1.2
+                    <ul>
+                        <li>tres 1.2.1</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!--
+       los elemento <li> dentro de otro elemento <ul> con una clase de em toman el tamaño
+con respecto al elemento Padre. Por lo tanto, en cada nivel de anidacion, el tamaño
+de la letra aumenta progresivamente, como el tamaño se ha definido como 1.3em(1,3
+veces el tamaño de la letra de su elemento padre)
+   -->
+   <ul class="rem">
+    <li>UNO</li>
+    <li>DOS</li>
+    <li>TRES
+        <ul>
+            <li>Tres 1.1</li>
+            <li>Tres 1.2
+                <ul>
+                    <li>tres 1.2.1</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<ul>
+    <li>UNO</li>
+    <li>DOS</li>
+    <li>TRES
+        <ul>
+            <li>Tres 1.1</li>
+            <li>Tres 1.2
+                <ul>
+                    <li>tres 1.2.1</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+</body>
+
+</html>
